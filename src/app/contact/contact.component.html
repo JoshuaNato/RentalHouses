@@ -1,0 +1,46 @@
+<div class="contact">
+	<div class="container-center">
+		<section class="row justify-content-between align-items-center">
+			<div class="left text-start col-md-6 col-sm-12 mb-4">
+				<h2>Contact</h2>
+				<p>
+					Here’s the revised text incorporating "Rental Houses Gk Villages Caloocan City":
+					
+					If you have any questions or need more information about Rental Houses Gk Villages Caloocan City, please feel free to contact us. We are here to help you. <a href="tel:+639052755830"
+						target="_blank">tel:+639052755830</a></p>
+				<button *ngIf="localBooking" class="btn-medium mt-3" aria-label="Book Now" (click)="scrollTo('booking')">Book Now</button>
+				<button *ngIf="!localBooking" class="btn-medium mt-3" aria-label="Book Now" (click)="openLinkInNewTab()">Book Now</button>
+
+			</div>
+			<div class="right text-start ps-3 col-md-6 col-sm-12 ">
+				<form (ngSubmit)="sendEmail()">
+					<div class="input-group">
+						<label for="name" class="text-input">Name</label>
+						<input type="text" id="name" name="name" [(ngModel)]="name" />
+					</div>
+					<div class="input-group">
+						<label for="phone" class="text-input">Phone</label>
+						<input type="text" id="phone" name="phone" [(ngModel)]="phone" />
+					</div>
+					<div class="input-group">
+						<label for="email" class="text-input">Email</label>
+						<input type="text" id="email" name="email" [(ngModel)]="email" />
+					</div>
+					<div class="input-group">
+						<label for="message" class="text-input">Message</label>
+						<textarea rows="6" id="message" name="message" [(ngModel)]="message"></textarea>
+					</div>
+					<div *ngIf="showMessage" [class.error]="isError" class="mb-3">
+						{{ messageText }}
+					</div>
+					<button type="submit" class="btn-big" aria-label="Enviar">Submit</button>
+				</form>
+			</div>
+		</section>
+		<div class="wrapp-map">
+	
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3857.7645095657535!2d121.04891090874644!3d14.782290085666327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397af75b66a78df%3A0xc048dcf3a0488b2e!2sPhase%208A%20Bagsak%20Court!5e0!3m2!1sen!2sph!4v1728216723458!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				
+		</div>
+	</div>
+</div>

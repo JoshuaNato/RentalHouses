@@ -1,0 +1,20 @@
+.custom-list {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.custom-list li {
+	font-size: 1.125rem;
+	line-height: 2.2;
+}
+
+.fa-check {
+	color: #a79770;
+	font-size: 0.8em;
+	line-height: 0.9;
+	font-weight: bold;
+}
+
+.btn-medium {
+	margin-top: 33px;
+}

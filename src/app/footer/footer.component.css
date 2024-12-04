@@ -1,0 +1,22 @@
+.footer {
+	background-color: #333333;
+	padding: 2em 2em;
+	text-align: center;
+	color: #fff;
+}
+
+.text-footer {
+	margin: 0;
+	font-size: 1em;
+}
+
+.format{
+	text-decoration: none;
+	color: #fff;
+}
+
+.nav-button{
+	cursor: pointer;
+	color: #fff;
+	font-size: 1em;
+}

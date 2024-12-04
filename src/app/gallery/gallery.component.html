@@ -1,0 +1,58 @@
+<div class="gallery">
+  <div class="container-center">
+    <h1>Gallery
+    </h1>
+    <p class="text-header">
+      Explore our charming rental house in GK Village, Caloocan City, where comfort and nature come together to provide you with an unforgettable experience.
+    </p>
+    <section class="row-card">
+      <!----------- CARD 1 ------------>
+      <photo-card [title]="'Gk Village'" [content]="''"
+        [images]="[
+                  '../../assets/images/gk.jpg',
+                  '../../assets/images/gk.jpg'
+                ]">
+      </photo-card>
+      <!----------- CARD 2 ------------>
+      <photo-card [title]="'Bagumbong'" [content]="''"
+        [images]="[
+        'https://img-ap-1.trovit.com/img1ph/1KaEB1910dH/1KaEB1910dH.5_11.jpg',
+        'https://img-ap-1.trovit.com/img1ph/1KaEB1910dH/1KaEB1910dH.5_11.jpg',
+                ]">
+      </photo-card>
+      <!----------- CARD 3 ------------>
+      <photo-card [title]="'Rental Houses'"
+        [content]="''" [images]="[
+        'https://img-ap-1.trovit.com/img1ph/N141X1P1L1K141Q/N141X1P1L1K141Q.5_11.jpg',
+        'https://img-ap-1.trovit.com/img1ph/1KaEB1910dH/1KaEB1910dH.2_11.jpg',
+                ]">
+      </photo-card>
+      <!----------- CARD 4 ------------>
+      <photo-card [title]="'Rental House'" [content]="''"
+        [images]="[
+        'https://img-ap-1.trovit.com/img1ph/CNkG1Pf1pc/CNkG1Pf1pc.5_11.jpg',
+        'https://img-ap-1.trovit.com/img1ph/CNkG1Pf1pc/CNkG1Pf1pc.3_11.jpg',
+                ]">
+      </photo-card>
+      <!----------- CARD 5 ------------>
+      <photo-card [title]="'House 4'" [content]="'Room 3'"
+        [images]="[
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRW3LKhDhDuoSsNqwUAzl11AYquzsUiQKnuM6L-RDz66FEQg9fpQNlbK6hM5KLLtYzwpg&usqp=CAU',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQHPYjhqO9quUJEzICtHOCvTNRK1nZJ8zssz2HOyXrDC4HPFipg8M8MtdC2Ntmw8Bh3F4&usqp=CAU',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRiOaed0ctb6_LenMKnq3U7ZfsAs-vAkEKX4WJaltbgeQ2jGtXc_len7IbFZWLXyReR68&usqp=CAU',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6gBtwq5k_rTWRtZ3ZKDjFVE3Znls2MAdNkmP2e1KHlMjndP9_jDnzA7G1qF8NOuy9t9c&usqp=CAU',
+                ]">
+      </photo-card>
+      <!----------- CARD 6 ------------>
+      <photo-card *ngIf="!localBooking" [title]="'Bagumbong'"
+        [content]="''"
+        [images]="['https://img-ap-1.trovit.com/img1ph/CNkG1Pf1pc/CNkG1Pf1pc.1_11.jpg']" [isSpecial]="true"
+        [specialLink]="''">
+      </photo-card>
+      <photo-card *ngIf="localBooking" [title]="'House 5'"
+        [content]="''"
+        [images]="['https://img-ap-1.trovit.com/img1ph/CNkG1Pf1pc/CNkG1Pf1pc.1_11.jpg']" [webBooking]="true">
+      </photo-card>
+    </section>
+  </div>
+</div>

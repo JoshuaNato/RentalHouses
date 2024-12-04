@@ -1,0 +1,15 @@
+<div class="about">
+  <div class="container-center">
+    <div class="row about-content">
+      <div class="left col-lg-4 col-md-12">
+        <div class="rounded-image" aria-hidden="true"></div>
+      </div>
+      <div class="right col-lg-7 col-md-9">
+        <h2 class="mb-4">About us </h2>
+        <p>Enjoy a unique experience in our charming rental house in Caloocan. You will have the chance to escape the hustle and bustle of everyday life and immerse yourself in the vibrant culture and history of this dynamic city. With a welcoming atmosphere and all modern amenities, our house is the perfect place to relax and explore the local wonders of Caloocan.</p>
+				<button *ngIf="localBooking" class="btn-medium" aria-label="Book Now " (click)="scrollTo('booking')">BOOKING</button>
+				<button *ngIf="!localBooking" class="btn-medium" aria-label="Book Now " (click)="openLinkInNewTab()">BOOKING</button>
+      </div>
+    </div>
+  </div>
+</div>

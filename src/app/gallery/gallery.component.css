@@ -1,0 +1,26 @@
+.gallery {
+	background-color: #a79770;
+	color: #fff;
+}
+
+.row-card {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+@media screen and (max-width: 992px) {
+
+	/* 2 cards in medium screen */
+	.row-card {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 576px) {
+
+	/* 1 card in small screen */
+	.row-card {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
